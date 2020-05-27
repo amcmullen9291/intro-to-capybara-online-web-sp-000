@@ -3,6 +3,9 @@ class Application < Sinatra::Base
   get '/' do
     @user_name = params[:user_name]
     erb :index
-    "Welcome #{user_name}"
   end
+  Post '/greet' do
+    
+  end 
+  
 end
