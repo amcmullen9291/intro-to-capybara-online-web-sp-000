@@ -5,13 +5,14 @@
     
   </head>
   <body>
-    <h1>Welcome!</h1>
-    <label for:user_name>name</label>
-    <form type="text" name="user_name" id="user_name">
-      <%@user_name=:name%>
-      <input type="submit">
-    </form>
-    
-    <p>Welcome <%=#{@user_name}"%></p>
+ <h1>Welcome!</h1>
+ 
+<form action="/greet" method="POST">
+  <label for="user_name">Name:</label>
+ 
+  <p><input type="text" name="user_name" id="user_name" /></p>
+ 
+  <input type="submit" value="Submit"/>
+</form>
   </body>
 </html>
